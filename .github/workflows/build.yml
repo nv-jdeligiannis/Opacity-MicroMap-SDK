@@ -8,7 +8,7 @@ on:
       - main
 jobs:
   Build-Windows:
-    runs-on: [windows-latest, gpu-v100-495-1]
+    runs-on: [windows-latest, gpu-latest]
     steps:
       -
         name : Checkout
