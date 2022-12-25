@@ -17,7 +17,7 @@ jobs:
           submodules: true
       -
         name: Install dependencies
-        uses: crazy-max/ghaction-chocolatey@v1
+        uses: crazy-max/ghaction-chocolatey@v2
         with:
           args: install windows-sdk-10.0 cmake -y
       -
