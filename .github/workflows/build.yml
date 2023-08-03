@@ -110,7 +110,7 @@ jobs:
            ./tests
            
   Build-Ubuntu-Arm:
-    runs-on: ubuntu-latest
+    runs-on: buildjet-4vcpu-ubuntu-2204-arm
     steps:
       -
         name : Checkout
@@ -123,8 +123,6 @@ jobs:
           cmake-version: '3.16.x'
       - name: Setup Ninja
         uses: seanmiddleditch/gha-setup-ninja@master
-      - name: ARM runner
-        uses: pguyot/arm-runner-action@v2.5.2
       -
         name: CMake Generate
         run: |
